@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Four Soccer Legends</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Alberta+Stencil&display=swap" rel="stylesheet">
+
+</head>
+<body id="main-body">
+    <div class="site-container" id="container">
+        <header>
+            <h1>Four Soccer Legends</h1>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+            </nav>
+        </header>
+
+        <section class="players">
+            <div class="player" id="Messi">
+                <img src="Messi.png" alt="Lionel Messi" onclick="myFunction()">
+                <h2>Lionel Messi</h2>
+                <button onclick="changeDescription('Messi')">More Info</button>
+                <p class="description">Argentina, Attacker, 2003, Inter-Miami(USA), June, 24, 1987.</p>
+                <div class="more info" id="Messi-info" style="display: none">
+                    <p>Messi has won 8 Ballon d'Or awards, captained Argentine to a World Cup victory, and played most of his career at Barcelona.</p>
+                </div>
+                <a href="https://en.wikipedia.org/wiki/Lionel_Messi" target="_blank">Wikipedia</a>
+            </div>
+
+            <div class="player" id="Ronaldo">
+                <img src="Ronaldo.png" alt="Cristiano Ronaldo" onclick="myFunction()">
+                <h2>Cristiano Ronaldo</h2>
+                <button onclick="changeDescription('Ronaldo')">More Info</button>
+                <p class="description">Portugal, Attacker, 2002, Al-Nassr(SA), February, 5, 1985.</p>
+                <div class="more info" id="Ronaldo-info" style="display: none">
+                    <p>Cristiano Ronaldo has won a total of 34 senior trophies throughout his career. He was one the Champions League and Europa League Trophy.</p>
+                </div>
+                <a href="https://en.wikipedia.org/wiki/Cristiano_Ronaldo" target="_blank">Wikipedia</a>
+            </div>
+
+            <div class="player" id="Neymar">
+                <img src="Neymar.png" alt="Neymar Jr." onclick="myFunction()">
+                <h2>Neymar Jr.</h2>
+                <button onclick="changeDescription('Neymar')">More Info</button>
+                <p class="description">Brazil, Attacker, 2009, Al-Hilal(SA), February, 5, 1992.</p>
+                <div class="more info" id="Neymar-info" style="display: none">
+                    <p>Neymar has won 23 trophies at club and in international levels. An example is the UEFA CHampions League Trophy.</p>
+                </div>
+                <a href="https://en.wikipedia.org/wiki/Neymar" target="_blank">Wikipedia</a>
+            </div>
+
+            <div class="player" id="MBappé">
+                <img src="MBappé.png" alt="Kylian MBappé" onclick="myFunction()">
+                <h2>Kylian MBappé</h2>
+                <button onclick="changeDescription('MBappé')">More Info</button>
+                <p class="description">France, Attacker, 2015, Real-Madrid(Spain). December, 20, 1998.</p>
+                <div class="more info" id="MBappé-info" style="display: none">
+                    <p>In the 2022 Qatar World Cup, MBappé won the Golden Boot, but his country came second, lost to Argentina. His team won the 2018 World Cup Trophy though, and he was just 19.</p>
+                </div>
+                <a href="https://en.wikipedia.org/wiki/Kylian_Mbappé" target="_blank">Wikipedia</a>
+            </div>
+        </section>
+
+    <section class="club_change">
+        <h3>Determine The Player's Favorite Soccer Club</h3>
+        <select id="menu" onchange="showText()">
+            <option value="">--Select a player--</option>
+            <option value="default">Default</option>
+            <option value="Messi">Messi</option>
+            <option value="Ronaldo">Ronaldo</option>
+            <option value="Neymar">Neymar</option>
+            <option value="MBappé">MBappé</option>
+         </select>
+    </section>
+
+    <div id="output"></div>
+
+    <footer>
+        <p>Made by Pranav Vandana from Hack Club!</p>
+    </footer>
+
+    <script src="index.js"></script>
+    </div>
+</body>
+</html>
